@@ -8,8 +8,6 @@
 <div class="d-flex justify-content-between flex-wrap gap-2 align-items-end mb-3">
 
     <div>
-
-    
         <label for="categoriaFiltro" class="form-label mb-1"><b>Filtrar por categoría:</b></label>
         <select id="categoriaFiltro" class="form-select" onchange="filtrarPorCategoria()">
             <option value="todas">Todas</option>
@@ -30,9 +28,6 @@
             <option value="Sendero">Sendero</option>
              <option value="Zoologico">Zoologico</option>
             <option value="Otro">Otro</option>
-
-
-
         </select>
     </div>
 

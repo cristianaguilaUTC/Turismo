@@ -11,3 +11,4 @@ Route::get('/', function () {
 
 Route::get('/turismos/mapa', [TurismoController::class, 'mapa']);
 Route::resource('turismos', TurismoController::class);
+
