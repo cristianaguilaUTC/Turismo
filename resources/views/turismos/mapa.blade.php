@@ -8,6 +8,8 @@
 <div class="d-flex justify-content-between flex-wrap gap-2 align-items-end mb-3">
 
     <div>
+
+    
         <label for="categoriaFiltro" class="form-label mb-1"><b>Filtrar por categoría:</b></label>
         <select id="categoriaFiltro" class="form-select" onchange="filtrarPorCategoria()">
             <option value="todas">Todas</option>
@@ -21,13 +23,16 @@
             <option value="Iglesia">Iglesia</option>
             <option value="Templo">Templo</option>
             <option value="Catedral">Catedral</option>
-            <option value="Zoologico">Zoologico</option>
             <option value="Acuario">Acuario</option>
             <option value="Mirador">Mirador</option>
             <option value="Mercado artesanal">Mercado artesanal</option>
             <option value="feria">feria</option>
             <option value="Sendero">Sendero</option>
+             <option value="Zoologico">Zoologico</option>
             <option value="Otro">Otro</option>
+
+
+
         </select>
     </div>
 
