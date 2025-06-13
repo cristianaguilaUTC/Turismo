@@ -98,8 +98,8 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="http://127.0.0.1:8000/turistas" class="active">Inicio</a></li>
-            <li><a href="{{route('turismos.create')}}">Turismo</a></li>
+            <li><a href="http://127.0.0.1:8000/turismos" class="active">Inicio</a></li>
+            <li><a href="http://127.0.0.1:8000/turismos">Turismo</a></li>
             <li><a href="{{url('turismos/mapa')}}">Mapa</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
