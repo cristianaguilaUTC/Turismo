@@ -48,10 +48,6 @@
       <input type="file" name="imagen" id="imagen" class="form-control">
       <small class="form-text text-muted">Si no eliges otra imagen, se conservará la actual.</small>
   </div>
-
-
-        
-
         <div class="mb-3">
             <label for="latitud" class="form-label"><b>Latitud:</b></label>
             <input type="text" name="latitud" id="latitud" class="form-control" value="{{ old('latitud', $turismo->latitud) }}">
