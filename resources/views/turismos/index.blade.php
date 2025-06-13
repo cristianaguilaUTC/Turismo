@@ -2,27 +2,28 @@
 
 @section('contenido')
 <div class="container mt-4">
-    <div class="d-flex gap-2 mb-3">
-        <a href="{{ url('turismos/mapa') }}" class="btn btn-success">
-            Ver mapa Global
-        </a>
-        <a href="{{ route('turismos.create') }}" class="btn btn-primary" >
-            <i class="fas fa-user-plus me-1"></i> Agregar punto
-        </a>
-    </div>
+    <div class="d-flex justify-content-start align-items-center gap-2 mb-3">
+    <a href="{{ url('turismos/mapa') }}" class="btn btn-outline-success shadow-sm">
+        <i class="fas fa-map-marked-alt me-1"></i> Mapa global
+    </a>
+    <a href="{{ route('turismos.create') }}" class="btn btn-outline-primary shadow-sm">
+        <i class="fas fa-map-pin me-1"></i> Agregar
+    </a>
+</div>
+
 
 
     <table class="table table-bordered table-striped" id="tabla">
         <thead class="table-dark">
             <tr>
-                <th>id</th>
-                <th>nombre</th>
-                <th>descripcion</th>
-                <th>categoria</th>
-                <th>imagen</th>
-                <th>latitud</th>
-                <th>longitud</th>
-                <th>acciones</th>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Categoria</th>
+                <th>Imagen</th>
+                <th>Latitud</th>
+                <th>Longitud</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
