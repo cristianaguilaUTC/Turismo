@@ -31,8 +31,6 @@
         </option>
     @endforeach
 </select>
-
-
         <div class="mb-3">
     <label for="imagen" class="form-label"><b>Imagen:</b></label>
 
