@@ -40,9 +40,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
     <script src="https://cdn.datatables.net/buttons/3.2.3/js/buttons.html5.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/3.2.3/js/buttons.print.min.js"></script>
-    
+
+
+   
      <meta name="description" content="">
      <meta name="keywords" content="">
+     
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -277,7 +280,10 @@
     <script src="{{ asset('import/MediCio/assets/js/main.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-   <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBigiRgokOOjrShvA5Mi93R6kmhIYj8yPE&callback=initMap"></script>
+    <!-- Importando API de GOOGLE MAPS-->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABE5OWEAIfoSVrz9VRsdXJgsciVbEwzxk&libraries=places&callback=initMap">
+    </script>
+    
     {% if messages %}
       @if(session('mensaje'))
         <script>

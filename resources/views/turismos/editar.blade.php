@@ -13,7 +13,7 @@
         </div>
 
         <div class="mb-3">
-            <label for="descripcion" class="form-label"><b>descripcion:</b></label>
+            <label for="descripcion" class="form-label"><b>Descripcion:</b></label>
             <input type="text" name="descripcion" id="descripcion" class="form-control" value="{{ old('descripcion', $turismo->descripcion) }}">
         </div>
 
