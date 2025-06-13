@@ -86,8 +86,8 @@
                     title:
                         "📍 " + turismo.nombre + "\n" +
                         "🗂 Categoría: " + turismo.categoria + "\n" +
-                        "📍 Longitud: " + turismo.longitud+ "\n" +
-                        "📍 Latitud: " + turismo.latitud ,
+                        "📌 Longitud: " + turismo.longitud+ "\n" +
+                        "📌 Latitud: " + turismo.latitud ,
                     icon: turismo.imagen && turismo.imagen !== 'sin imagen'
                         ? {
                             url: iconUrl,
