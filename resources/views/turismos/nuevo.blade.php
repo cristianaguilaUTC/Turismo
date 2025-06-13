@@ -23,22 +23,22 @@
             <label for="categoria" class="form-label"><b>Categoría:</b></label>
             <select name="categoria" id="categoria" class="form-select">
                 <option value="">Seleccione una categoría</option>
-                <option value="Reserva ecologica">Reserva ecologica</option>
-                <option value="Volcan">Volcan</option>
-                <option value="Lago">Lago</option>
-                <option value="Museo">Museo</option>
-                <option value="Monumento">Monumento</option>
+                <option value="Acuario">Acuario</option>
+                <option value="Catedral">Catedral</option>
                 <option value="Centro cultural">Centro cultural</option>
-                <option value="Patrimonio de la humanidad">Patrimonio de la humanidad</option>
+                <option value="feria">feria</option>
+                <option value="Lago">Lago</option> 
                 <option value="Iglesia">Iglesia</option>
                 <option value="Templo">Templo</option>
-                <option value="Catedral">Catedral</option>
-                <option value="Zoologico">Zoologico</option>
-                <option value="Acuario">Acuario</option>
-                <option value="Mirador">Mirador</option>
+                <option value="Patrimonio de la humanidad">Patrimonio de la humanidad</option>
                 <option value="Mercado artesanal">Mercado artesanal</option>
-                <option value="feria">feria</option>
+                <option value="Mirador">Mirador</option>
+                <option value="Monumento">Monumento</option>
+                <option value="Museo">Museo</option>
+                <option value="Reserva ecologica">Reserva ecologica</option>
                 <option value="Sendero">Sendero</option>
+                <option value="Volcan">Volcan</option>
+                <option value="Zoologico">Zoologico</option>
                 <option value="Otro">Otro</option>
             </select>
         </div>
