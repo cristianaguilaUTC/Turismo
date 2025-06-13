@@ -128,7 +128,6 @@ class TurismoController extends Controller
         }
 
         $turismo->delete();
-
         return redirect()->route('turismos.index')->with('success', 'turismo eliminado correctamente.');
     }
 
