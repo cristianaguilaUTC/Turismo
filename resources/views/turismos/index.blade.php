@@ -10,9 +10,6 @@
         <i class="fas fa-map-pin me-1"></i> Agregar
     </a>
 </div>
-
-
-
     <table class="table table-bordered table-striped" id="tabla">
         <thead class="table-dark">
             <tr>
