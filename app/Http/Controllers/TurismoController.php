@@ -14,8 +14,8 @@ class TurismoController extends Controller
      */
     public function index()
     {
-        //
-       $turismos = Turismo::all(); // plural
+        //-----------------------------
+       $turismos = Turismo::all(); 
         return view("turismos.index", compact("turismos"));
     }
 
