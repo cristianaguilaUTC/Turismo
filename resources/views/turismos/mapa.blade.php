@@ -2,7 +2,7 @@
 
 @section('contenido')
 
-<h1 class="mb-4">Mapa de Clientes</h1>
+<h1 class="mb-4" ><i class="bi bi-globe"></i>Mapa de Clientes</h1>
 
 <!-- Selector de categoría y botones de zoom alineados -->
 <div class="d-flex justify-content-between flex-wrap gap-2 align-items-end mb-3">

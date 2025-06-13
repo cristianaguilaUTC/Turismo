@@ -131,7 +131,7 @@
 
       <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
         
-        <iframe style="border:0; width: 100%; height: 370px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3063290664454!2d-78.63556072422178!3d-0.9179034353361397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d460483c1c1a3b%3A0x694a140aab02b1c!2sUniversidad%20T%C3%A9cnica%20de%20Cotopaxi%20(UTC)!5e0!3m2!1ses!2sec!4v1747723721841!5m2!1ses!2sec" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe style="border:0; width: 90%; height: 370px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3063290664454!2d-78.63556072422178!3d-0.9179034353361397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d460483c1c1a3b%3A0x694a140aab02b1c!2sUniversidad%20T%C3%A9cnica%20de%20Cotopaxi%20(UTC)!5e0!3m2!1ses!2sec!4v1747723721841!5m2!1ses!2sec" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div><!-- End Google Maps -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">

@@ -1,10 +1,11 @@
 @extends('layout.app')
 
 @section('contenido')
-<div class="container mt-4">
+<div class="container mt-4" style="border: 1px solid black;  border-radius: 15px;">
     <form action="{{ route('turismos.update', $turismo->id) }}" id="formEturismos" method="post" enctype="multipart/form-data">
         @csrf
         @method('PUT')
+        <br>
         <h2 class="mb-4"><i class="fas fa-user-edit me-2"></i>Editar Punto Turistico</h2>
 
         <div class="mb-3">
@@ -17,34 +18,37 @@
             <input type="text" name="descripcion" id="descripcion" class="form-control" value="{{ old('descripcion', $turismo->descripcion) }}">
         </div>
 
-        <div class="mb-3">
-            <label for="categoria" class="form-label"><b>Categoría:</b></label>
-            <select name="categoria" id="categoria" class="form-select">
-                <option value="">Seleccione una categoría</option>
-                <option value="Reserva ecologica">Reserva ecologica</option>
-                <option value="Volcan">Volcan</option>
-                <option value="Lago">Lago</option>
-                <option value="Museo">Museo</option>
-                <option value="Monumento">Monumento</option>
-                <option value="Centro cultural">Centro cultural</option>
-                <option value="Patrimonio de la humanidad">Patrimonio de la humanidad</option>
-                <option value="Iglesia">Iglesia</option>
-                <option value="Templo">Templo</option>
-                <option value="Catedral">Catedral</option>
-                <option value="Zoologico">Zoologico</option>
-                <option value="Acuario">Acuario</option>
-                <option value="Mirador">Mirador</option>
-                <option value="Mercado artesanal">Mercado artesanal</option>
-                <option value="feria">feria</option>
-                <option value="Sendero">Sendero</option>
-                <option value="Otro">Otro</option>
-            </select>
-        </div>
+        <select name="categoria" id="categoria" class="form-select">
+    <option value="">Seleccione una categoría</option>
+    @foreach([
+        "Reserva ecologica", "Volcan", "Lago", "Museo", "Monumento",
+        "Centro cultural", "Patrimonio de la humanidad", "Iglesia",
+        "Templo", "Catedral", "Zoologico", "Acuario", "Mirador",
+        "Mercado artesanal", "feria", "Sendero", "Otro"
+    ] as $cat)
+        <option value="{{ $cat }}" {{ $turismo->categoria == $cat ? 'selected' : '' }}>
+            {{ $cat }}
+        </option>
+    @endforeach
+</select>
+
 
         <div class="mb-3">
-            <label for="imagen" class="form-label"><b>imagen:</b></label>
-            <input type="file" name="imagen" id="imagen" class="form-control" value="{{ old('imagen', $turismo->imagen) }}">
-        </div>
+    <label for="imagen" class="form-label"><b>Imagen:</b></label>
+
+      {{-- Mostrar imagen actual --}}
+      @if($turismo->imagen && $turismo->imagen !== 'sin imagen')
+          <div class="mb-2">
+              <img src="{{ asset('storage/' . $turismo->imagen) }}" alt="Imagen actual" width="150" class="rounded shadow-sm">
+              <p class="text-muted mb-1">Imagen actual</p>
+          </div>
+      @endif
+
+      {{-- Campo de archivo para cargar nueva imagen --}}
+      <input type="file" name="imagen" id="imagen" class="form-control">
+      <small class="form-text text-muted">Si no eliges otra imagen, se conservará la actual.</small>
+  </div>
+
 
         
 
@@ -78,6 +82,7 @@
         <a href="{{ route('turismos.index') }}" class="btn btn-secondary ms-2">
             <i class="fas fa-arrow-left me-1"></i>Cancelar
         </a>
+        <br><br>
     </form>
 </div>
 
@@ -127,9 +132,7 @@
           minlength: 3,
           maxlength: 40
         },
-        imagen:{
-          required: true,
-        },
+        
         descripcion: {
           required: true,
           minlength: 5,
@@ -157,9 +160,6 @@
           required: "Por favor ingresa el nombre",
           minlength: "La cédula debe tener al menos 3 caracteres",
           maxlength: "La cédula no debe superar los 40 caracteres"
-        },
-        imagen:{
-          required: "Ingrese la imagen",
         },
         descripcion: {
           required: "Por favor ingresa una descripcion",

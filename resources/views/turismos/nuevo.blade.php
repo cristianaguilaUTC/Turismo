@@ -2,10 +2,11 @@
 @extends('layout.app')
 
 @section('contenido')
-<div class="container mt-4">
+<div class="container mt-4" style="border: 1px solid black;  border-radius: 15px;">
     <form action="{{ route('turismos.store') }}" id="formNturismo" method="post" enctype="multipart/form-data">
         @csrf
-        <h2 class="mb-4"><i class="fas fa-user-plus me-2"></i>Registrar el Punto Turistico</h2>
+        <br>
+        <h2 class="mb-4"><i class="fas fa-user-plus me-2"></i>Registrar un Nuevo Lugar</h2>
 
 
         <div class="mb-3">
@@ -61,17 +62,18 @@
 
         <div class="mb-4">
             <label class="form-label"><b>Seleccionar ubicación:</b></label>
-            <div id="mapa_cliente" style="border:1px solid #ccc; height:250px; width:100%;" class="rounded"></div>
+            <div id="mapa_cliente" style="border:1px solid #black; height:250px; width:100%;" class="rounded"></div>
         </div>
 
-        <div class="my-2 text-end">
-            <button type="button" style="color: blue;" class="btn btn-outline-dark btn-sm me-1" id="btnZoomIn">
-                <i class="fas fa-search-plus"></i> Acercar
-            </button>
-            <button type="button" style="color: red;" class="btn btn-outline-dark btn-sm" id="btnZoomOut">
-                <i class="fas fa-search-minus"></i> Alejar
-            </button>
-        </div>
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-dark btn-md px-4 py-2 me-2" id="btnZoomIn">
+              <i class="fas fa-search-plus me-1"></i> Acercar
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-md px-4 py-2" id="btnZoomOut">
+              <i class="fas fa-search-minus me-1"></i> Alejar
+          </button>
+      </div>
+
 
 
         <button type="submit" class="btn btn-success">
@@ -80,6 +82,8 @@
         <a href="{{ route('turismos.index') }}" class="btn btn-secondary ms-2">
             <i class="fas fa-arrow-left me-1"></i>Cancelar
         </a>
+        <br>
+        <br>
     </form>
 </div>
 
