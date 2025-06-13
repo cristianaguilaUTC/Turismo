@@ -24,8 +24,10 @@ class TurismoController extends Controller
      */
     public function mapa()
     {
+
         $turismos = Turismo::all();
         return view('turismos.mapa', compact('turismos'));
+        
     }
 
 
